@@ -21,7 +21,6 @@ Thus, the website's main feature is an adjustable timer with options of for 2 mi
 
 ## User Stories
 
-
 ### Site Owner goals
 - As site owners, we want to promote mindfulness and wellbeing
 - As site owners, we want our site to be easy to use and navigate
