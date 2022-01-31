@@ -574,17 +574,54 @@ a:link {
   }
 
 /* LOGIN PAGE */
-.modal {
-  top: 20%;
+#image {
+  /*background: url('/static/images/brain-green.jpg') no-repeat center;
+  background-size: cover;*/
+  height: 40rem;
+  background-color: #88bfc440!important;
 }
-.modal-content {
-  background: #4a849373!important;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 25px 25px rgb(0 0 0 / 10%);
+.card-login {
+  background-color:#2A5D65;
+  height: 54vh;
+  padding: 20px 50px;
 }
-.btn-check:focus+.btn, .btn:focus {
-  box-shadow:none;
+.form-control, #remember-me {
+  background-color: #ffe0;
+  border: 1px solid #ced4da00;
+  border-bottom: 1px solid #FCFAFA;
 }
+.control-label {
+  color: #FCFAFA;
+  margin-top: 3px;
+}
+#remember_me_label {
+  margin-top: 30px;
+  color:#FCFAFA;
+}
+.btn-outline-info {
+  color: #0dcaf0;
+}
+.header-style {
+  color:#FCFAFA;
+  letter-spacing: 2px;
+}
+.font-style, .control-label, #remember_me_label {
+  color: #fafafa;
+}
+.font-style-link {
+  color: #B9DE54;
+  font-weight: 500;
+}
+.font-style-link:hover {
+  color: #3BBFCE;
+}
+.form-control:focus {
+  background-color:#2d7580eb!important;
+  border:none;
+  box-shadow: none;
+}
+
+
 
 /* Home page card's styling */
 .card {
@@ -596,15 +633,16 @@ a:link {
 }
 
 
+/* Resources Page */
 
-
-
-/*Resources Page styling*/
-
-#resources-background {
-  background: url('/static/images/hero-image.jpg') no-repeat center;
+#resource-header {
+  background: url('/static/images/resources.jpg') no-repeat center;
   background-size: cover;
-  background-attachment: fixed;
+  height: 40rem;
+}
+
+#bg-app {
+  background-color: #ecf6e7 !important;
 }
 
 #resources-header {
@@ -616,6 +654,17 @@ a:link {
   border-radius: 20px;
 }
 
+.card {
+  background-color: #fff !important;
+  box-shadow: 0px 0px 25px rgb(0 0 0 / 10%);
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.05); /* IE 9 */
+  -webkit-transform: scale(1.05); /* Safari 3-8 */
+  transform: scale(1.05); 
+}
+
 #card-container {
   width: 90%;
   height: 100%;
@@ -623,107 +672,28 @@ a:link {
   column-count: 3;
 }
 
-/*#resources-row-1 {
-  column-count: 5;
-  margin-bottom: 30px;
-}*/
-
-/*#resources-row-2 {
-  column-count: 4;
-  margin-bottom: 20px;
-}*/
-
-/*.col-sm-6 {
-  width: 100%;
-  padding: 20px;
-  min-height: 300px;
-}*/
-
-.box {
-  background: #4A8493;
-  padding: 20px;
-  border-radius: 30px;
-  width: 100%;
-  height: 250px;
-  margin: 20px 0 20px 0;
-  display: inline-block;
+/* --- // Message Chips (Flask Flash Messages) */
+.message-success {
+  color: #FFFFFF;
+  background-color: #26A69A;
 }
 
-.box-text {
-  height: 125px;
+.message-info {
+  color: #FFFFFF;
+  background-color: #37474F;
 }
 
-.btn {
-  width: 100%;
+.message-warning {
+  color: #FFFFFF;
+  background-color: orange;
 }
 
-@media screen and (max-width: 1700px) {
-  #resources-header {
-    width: 45%;
-  }
-
-
+.message-danger {
+  color: #FFFFFF;
+  background-color: #d81b60;
 }
 
-@media screen and (max-width: 1520px) {
-  #resources-header {
-    width: 55%;
-  }
-} 
-
-@media screen and (max-width: 1250px) {
-  #resources-header {
-    width: 65%;
-  }
-  
-  #card-container {
-    width: 95%;
-  }
+.help-block {
+  color: #FFFFFF;
+  background-color: #d81b60;
 }
-
-@media screen and (max-width: 1060px) {
-  #resources-header {
-    width: 75%;
-  }
-
-  #card-container {
-    column-count: 2;
-  }
-
-  #card-container .box:nth-child(5) {
-    margin-left: 50%;
-  }
-
-  .box {
-    height: 225px;
-  }
-
-  .box-text{
-    height: 100px;
-  };
-}
-
-@media screen and (max-width: 770px) {
-  #resources-header {
-    width: 100%;
-  }
-
-  #card-container {
-    column-count: 1;
-  }
-
-  #card-container .box:nth-child(5) {
-    margin-left: 10px;
-  }
-
-  .box {
-    height: 250px;
-  }
-
-  .box-text {
-    height: 125px;
-  }
-}
-
-
-
