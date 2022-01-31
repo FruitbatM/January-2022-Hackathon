@@ -79,7 +79,7 @@ span.navbar-text {
   height: 50%;
   width: 50%;
   position: absolute;
-  margin-top: -2rem;
+  z-index: -1;
 }
 
 /* Blog page */
