@@ -64,17 +64,6 @@
                                 {{ blog.comments }}
                             </p>
                         </div>
-                        <div class="article-footer">
-                            <div class="row">
-                                <div class="col-6 text-left footer-link">
-                                    <span>
-                                        <a href="#">
-                                            <a href="#" class="article-link">Read more</a>
-                                        </a>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </article>
             </div>
@@ -85,8 +74,11 @@
 
             <div class="container">
                 {% if call_or_get(current_user.is_authenticated) %}
-                <a class="nav-link" href="{{ url_for('add_blog')}}">Add Blog</a>
+                <a class="btn btn-lg btn-login text-dark" href="{{ url_for('add_blog')}}">Add Blog</a>
                 {% endif %}
+            </div>
+            <div class="container">
+                &nbsp;
             </div>
             <div class="container">
                 {# Macro for creating navigation links #}
