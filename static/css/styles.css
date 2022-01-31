@@ -79,6 +79,7 @@ span.navbar-text {
   height: 45%;
   width: 45%;
   position: absolute;
+  margin-top: 5rem;
   z-index: -1;
 }
 
@@ -573,10 +574,11 @@ a:link {
     }
 
     .timer-svg {
-      height: 50%;
-      width: 50%;
+      height: 60%;
+      width: 60%;
       position: absolute;
-      margin-left: 10rem;
+      margin-left: 7rem;
+      margin-top: -5rem;
     }    
   }
 
