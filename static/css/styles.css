@@ -678,6 +678,10 @@ a:link {
   transform: scale(1.05); 
 }
 
+.card-link {
+  color: #084298;
+}
+
 #card-container {
   width: 90%;
   height: 100%;
