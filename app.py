@@ -125,6 +125,7 @@ def home_page():
 
     return render_template("index.html")
 
+
 # Main MindTimer Application Page
 @app.route("/timer")
 def timer():
