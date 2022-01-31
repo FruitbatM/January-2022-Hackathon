@@ -100,10 +100,6 @@ span.navbar-text {
   min-height: 73vh;
 }
 
-.blog-input {
-  width: 16rem;
-}
-
 #btn-blog {
   background-color: #2A5D65;
 }
@@ -290,9 +286,6 @@ a:link {
       margin-right: 5rem;
     }
 
-    .blog-input {
-      width: 30rem;
-    }
     .bg-add-blog {
       height: 70vh;
     }
@@ -587,10 +580,6 @@ a:link {
     .section-heading {
       font-size: 2.1rem;
       margin-top: 6rem;
-    }
-
-    .blog-input {
-      width: 30rem;
     }
 
     .timer-svg {
