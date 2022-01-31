@@ -181,6 +181,7 @@ span.navbar-text {
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  height: 300px;
 }
 
 .article-card-title a {
