@@ -125,6 +125,7 @@ def home_page():
 
     return render_template("index.html")
 
+
 # Main MindTimer Application Page
 @app.route("/timer")
 def timer():
@@ -183,17 +184,8 @@ def blog(page=1):
     """
     The "R" in CRUD, viewing Blog Posts.
     """
-    if not current_user.is_authenticated:
-        flash("You must be logged in!", "danger")
-        return redirect(url_for("home_page"))
-
-    blogs_pagination = Blog.objects.filter(user=current_user.username).paginate(page=page, per_page=3)
+    blogs_pagination = Blog.objects.paginate(page=page, per_page=3)
     return render_template("blog.html", blogs_pagination=blogs_pagination, page_prev=(page - 1), page_next=(page + 1))
-
-
-@app.route("/blog_post")
-def blog_post():
-    return render_template("blog_post.html")
 
 
 @app.route("/resources")

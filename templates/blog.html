@@ -87,7 +87,7 @@
                 {# Macro for creating navigation links #}
                 {% macro render_navigation(pagination, endpoint) %}
 
-                <div class="pagination">Page #:
+                <div class="pagination">Page #:&nbsp;
                     {% if page_prev == 0 %}
                     &lt;&nbsp;
                     {% else %}
@@ -103,7 +103,7 @@
                     {% if page != pagination.page %}
                     <a href="{{ url_for(endpoint, page=page) }}">{{ page }}</a>
                     {% else %}
-                    <span style="background-color: #0D47A1; color: white; padding: 1px 5px;">{{ page }}</span>
+                    <span style="background-color: #2CA6B4; color: white; padding: 1px 5px;">{{ page }}</span>
                     {% endif %}
                     {% else %}
                     <span class="ellipsis">…</span>
