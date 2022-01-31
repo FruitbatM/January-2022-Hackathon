@@ -76,12 +76,12 @@ span.navbar-text {
 }
 
 .timer-svg {
-  height: 35%;
-  width: 35%;
+  height: 50%;
+  width: 50%;
   position: absolute;
-  margin-left: 14rem;
-  margin-top: -5rem;
+  margin-top: -2rem;
 }
+
 
 /* Blog page */
 #news-header {
@@ -201,7 +201,7 @@ span.navbar-text {
 
 /* Footer */
 footer {
-  background-color: #2DA6b4;
+  background-color: #377180;
   width: 100%;
 }
 
@@ -220,6 +220,16 @@ a:link {
 
 .para-center {
   padding-top: 3rem;
+}
+
+.media-text {
+  padding-left: 1.5rem;
+}
+
+.social-media > a {
+  color: #fafafa;
+  font-size: 1.5rem;
+  padding-right: 0.3rem;
 }
 
 /* Error pages */
@@ -336,6 +346,13 @@ a:link {
   and (min-width : 768px) 
   and (max-width : 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
+
+    .timer-svg {
+      height: 40%;
+      width: 40%;
+      margin-right: 5rem;
+    }
+
     .blog-input {
       width: 30rem;
     }
@@ -623,6 +640,10 @@ a:link {
       width: 30rem;
     }
 
+    .timer-svg {
+      position: absolute;
+      margin-left: 10rem;
+    }    
   }
 
 /* LOGIN PAGE */
