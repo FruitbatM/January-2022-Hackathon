@@ -1,40 +1,50 @@
 {% extends "flask_user_layout.html" %}
+
 {% block content %}
-<div class="container">
-    <div class="row">
-        <form action="{{ url_for('save_blog') }}" method="POST" class="col s12">
-            <input type="hidden" name="csrf_token" value="{{csrf_token()}}">
-            <div class="row">
-                <div class="input-field col s12">
-                    <label for="title">Blog Title</label>
-                    <input id="title" name="title" type="text" maxlength="200" required>
+
+<div class="container-fluid bg-add-blog">
+    <div class="container">
+        <div class="row my-2 pt-4">
+            <div class="col-12">
+                <h2 class="text-center text-uppercase">Add a blog post</h2>
+                <div class="hr"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3 mb-5">
+                <div class="login-form bg-light mt-4 p-4">
+                    <form action="{{ url_for('save_blog') }}" method="POST" class="row g-3">
+                        <input type="hidden" name="csrf_token" value="{{csrf_token()}}">
+                        <div class="col-12">
+                            <label for="title">Blog Title</label><br>
+                            <input id="title" name="title" type="text" class="blog-input" maxlength="200" required>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="short_description">Blog Description</label><br>
+                            <textarea id="short_description" name="short_description" class="blog-input" maxlength="1500"></textarea>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="comments">Blog Comments</label><br>
+                            <textarea id="comments" name="comments" class="blog-input" maxlength="3000"></textarea>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="image">Blog image</label><br>
+                            <input id="image" name="image" type="text" class="blog-input" maxlength="200" required>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-dark section-button float-end" 
+                                name="action">ADD BLOG</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <label for="short_description">Blog Description</label>
-                    <textarea id="short_description" name="short_description" maxlength="1500"
-                        class="materialize-textarea"></textarea>
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <label for="comments">Blog Comments</label>
-                    <textarea id="comments" name="comments" maxlength="3000"
-                        class="materialize-textarea"></textarea>
-                </div>
-            </div>
-            <div class="row button_top_padding">
-                <button class="btn waves-effect waves-light" type="submit" name="action">Add Blog
-                </button>
-            </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="image" name="image" type="text" maxlength="200" required>
-                    <label for="image">Blog image</label>
-                </div>
-            </div>
-        </form>
+        </div>
     </div>
 </div>
+
 {% endblock %}
