@@ -583,10 +583,12 @@ a:link {
   }
 
 /* LOGIN PAGE */
+#image {
+  height: 40rem;
+}
 
 .card-login {
   background-color:#2A5D65;
-  height: 54vh;
   padding: 20px 50px;
 }
 
