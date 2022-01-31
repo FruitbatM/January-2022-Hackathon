@@ -100,10 +100,6 @@ span.navbar-text {
   min-height: 73vh;
 }
 
-.blog-input {
-  width: 16rem;
-}
-
 #btn-blog {
   background-color: #2A5D65;
 }
@@ -267,6 +263,10 @@ a:link {
   color: #FFF !important;
 }
 
+.blog-input {
+  width: 17rem;
+}
+
 .error-button {
   background-color: #3BBFCE;
   color: #000000;
@@ -292,8 +292,9 @@ a:link {
     }
 
     .blog-input {
-      width: 30rem;
+      width: 22rem;
     }
+
     .bg-add-blog {
       height: 70vh;
     }
@@ -591,7 +592,7 @@ a:link {
     }
 
     .blog-input {
-      width: 30rem;
+      width: 25rem;
     }
 
     .timer-svg {
