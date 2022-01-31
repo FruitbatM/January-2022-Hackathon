@@ -123,6 +123,7 @@ span.navbar-text {
 .wave {
   border-radius: 56% 44% 69% 31% / 43% 56% 44% 57% ;
 }
+
 .section-heading {
   margin-top: 3rem;
   font-family: 'Roboto', sans-serif;
@@ -230,6 +231,18 @@ a:link {
   color: #fafafa;
   font-size: 1.5rem;
   padding-right: 0.3rem;
+}
+
+.modal-content {
+  background-color: #2A5D65;
+}
+
+.form-control {
+  color: #FFF !important;
+}
+
+.form-floating {
+  color: #FFF !important;
 }
 
 .error-button {
