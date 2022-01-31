@@ -41,17 +41,47 @@ span.navbar-text {
 #home-header {
   background: url('/static/images/woman.jpg') no-repeat center;
   background-size: cover;
-  height: 40rem;
+  height: 30rem;
 }
 
 .main-heading {
   margin-top: 10rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 2.4rem;
   font-weight: 600;
-  color: #000000;
+  color: #084298 !important;
   text-shadow: 0.07rem 0.07rem #fafafa;
 }
+
+.section-p {
+  font-family: 'Montserrat', sans-serif;
+  color: #212529;
+  font-size: 1.2rem;
+}
+
+.section-heading-1 {
+  font-size: 2rem;
+  margin-top: 5rem;
+}
+
+.btn-login {
+  background-color: #56C3D4;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+}
+
+.timer-heading {
+  color: #212134;
+  font-size: 1.5 rem;
+}
+
+.timer-svg {
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  margin-top: -2rem;
+}
+
 
 /* Blog page */
 #news-header {
@@ -62,7 +92,8 @@ span.navbar-text {
 
 .sub-heading {
   color: #fafafa;
-  text-shadow: 0.25rem 0.25rem 0.8rem #343a40;
+  text-shadow: 0.25rem 0.25rem 0.7rem #343a40;
+  font-size: 1.5 rem;
 }
 
 .bg-add-blog {
@@ -74,9 +105,10 @@ span.navbar-text {
 }
 
 #timer-header {
-  background: url('/static/images/brain-green.jpg') no-repeat center;
+  background: url('') no-repeat center;
+  background-color: #CEEBEA;
   background-size: cover;
-  height: 54rem;
+  height: 42rem;
 }
 .timer-overlay {
   position: absolute;
@@ -169,7 +201,7 @@ span.navbar-text {
 
 /* Footer */
 footer {
-  background-color: #2DA6b4;
+  background-color: #377180;
   width: 100%;
 }
 
@@ -188,6 +220,16 @@ a:link {
 
 .para-center {
   padding-top: 3rem;
+}
+
+.media-text {
+  padding-left: 1.5rem;
+}
+
+.social-media > a {
+  color: #fafafa;
+  font-size: 1.5rem;
+  padding-right: 0.3rem;
 }
 
 /* Error pages */
@@ -304,6 +346,13 @@ a:link {
   and (min-width : 768px) 
   and (max-width : 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
+
+    .timer-svg {
+      height: 40%;
+      width: 40%;
+      margin-right: 5rem;
+    }
+
     .blog-input {
       width: 30rem;
     }
@@ -579,6 +628,7 @@ a:link {
       margin-top: 14rem;
       font-size: 3rem;
       font-weight: 500;
+      color: #084298 !important;
     }
 
     .section-heading {
@@ -590,6 +640,10 @@ a:link {
       width: 30rem;
     }
 
+    .timer-svg {
+      position: absolute;
+      margin-left: 10rem;
+    }    
   }
 
 /* LOGIN PAGE */
