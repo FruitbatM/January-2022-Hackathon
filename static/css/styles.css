@@ -96,16 +96,19 @@ span.navbar-text {
   font-size: 1.5rem;
 }
 
-.bg-add-blog {
-  background-color: #88bfc440;
+.blog-form {
+  min-height: 73vh;
 }
 
 .blog-input {
   width: 16rem;
 }
 
+#btn-blog {
+  background-color: #2A5D65;
+}
+
 #timer-header {
-  background: url('') no-repeat center;
   background-color: #CEEBEA;
   background-size: cover;
   height: 42rem;
@@ -200,6 +203,23 @@ span.navbar-text {
 .article-link:hover {
   color: #2f7f79;
 }
+
+.article-content {
+  max-width: 18.75rem;
+  height: 30rem;
+
+  -webkit-box-shadow: 0px 0px 25px rgb(0 0 0 / 10%);
+  box-shadow: 0px 0px 25px rgb(0 0 0 / 10%);
+  overflow: hidden;
+  position: relative;
+  margin: 15px auto;
+}
+
+.scroll {
+  max-height: 25rem;
+  overflow-y: auto;
+}
+
 
 /* Footer */
 footer {
@@ -583,7 +603,7 @@ a:link {
   }
 
 /* LOGIN PAGE */
-#image {
+#form-h {
   height: 40rem;
 }
 
