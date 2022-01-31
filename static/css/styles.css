@@ -574,17 +574,54 @@ a:link {
   }
 
 /* LOGIN PAGE */
-.modal {
-  top: 20%;
+#image {
+  /*background: url('/static/images/brain-green.jpg') no-repeat center;
+  background-size: cover;*/
+  height: 40rem;
+  background-color: #88bfc440!important;
 }
-.modal-content {
-  background: #4a849373!important;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 25px 25px rgb(0 0 0 / 10%);
+.card-login {
+  background-color:#2A5D65;
+  height: 54vh;
+  padding: 20px 50px;
 }
-.btn-check:focus+.btn, .btn:focus {
-  box-shadow:none;
+.form-control, #remember-me {
+  background-color: #ffe0;
+  border: 1px solid #ced4da00;
+  border-bottom: 1px solid #FCFAFA;
 }
+.control-label {
+  color: #FCFAFA;
+  margin-top: 3px;
+}
+#remember_me_label {
+  margin-top: 30px;
+  color:#FCFAFA;
+}
+.btn-outline-info {
+  color: #0dcaf0;
+}
+.header-style {
+  color:#FCFAFA;
+  letter-spacing: 2px;
+}
+.font-style, .control-label, #remember_me_label {
+  color: #fafafa;
+}
+.font-style-link {
+  color: #B9DE54;
+  font-weight: 500;
+}
+.font-style-link:hover {
+  color: #3BBFCE;
+}
+.form-control:focus {
+  background-color:#2d7580eb!important;
+  border:none;
+  box-shadow: none;
+}
+
+
 
 /* Home page card's styling */
 .card {
@@ -635,3 +672,28 @@ a:link {
   column-count: 3;
 }
 
+/* --- // Message Chips (Flask Flash Messages) */
+.message-success {
+  color: #FFFFFF;
+  background-color: #26A69A;
+}
+
+.message-info {
+  color: #FFFFFF;
+  background-color: #37474F;
+}
+
+.message-warning {
+  color: #FFFFFF;
+  background-color: orange;
+}
+
+.message-danger {
+  color: #FFFFFF;
+  background-color: #d81b60;
+}
+
+.help-block {
+  color: #FFFFFF;
+  background-color: #d81b60;
+}
