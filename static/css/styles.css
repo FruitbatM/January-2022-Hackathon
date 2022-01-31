@@ -262,6 +262,10 @@ a:link {
   color: #FFF !important;
 }
 
+.blog-input {
+  width: 17rem;
+}
+
 .error-button {
   background-color: #3BBFCE;
   color: #000000;
@@ -284,6 +288,10 @@ a:link {
       height: 50% !important;
       width: 50% !important;
       margin-right: 5rem;
+    }
+
+    .blog-input {
+      width: 22rem;
     }
 
     .bg-add-blog {
@@ -580,6 +588,10 @@ a:link {
     .section-heading {
       font-size: 2.1rem;
       margin-top: 6rem;
+    }
+
+    .blog-input {
+      width: 25rem;
     }
 
     .timer-svg {
