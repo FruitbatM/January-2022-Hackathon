@@ -75,6 +75,14 @@ span.navbar-text {
   font-size: 1.5 rem;
 }
 
+.timer-svg {
+  height: 35%;
+  width: 35%;
+  position: absolute;
+  margin-left: 14rem;
+  margin-top: -5rem;
+}
+
 /* Blog page */
 #news-header {
   background: url('/static/images/news.jpg') no-repeat center;
