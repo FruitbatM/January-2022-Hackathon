@@ -1,106 +1,248 @@
 {% extends "flask_user_layout.html" %}
 
 {% block content %}
-
-<div id="resources-background" class="text-white">
-
-    <h1 id="resources-header" class="text-white">
-        Mindfulness and Wellbeing resources
-    </h1>
-
-    <div id="card-container">
-
-        <div class="box">
-            <div class="box-body">
-                <h5 class="box-title">The NHS</h5>
-                <p class="box-text">
-                    Britain's National Health Service has increasingly recognised the importance of mindfulness and mental well-being in recent years
-                </p>
-                <a href="https://www.nhs.uk/mental-health/self-help/tips-and-support/mindfulness/" aria-label="Visit the NHS Website" class="btn btn-primary">
-                    Visit the NHS website
-                </a>
-            </div> 
-        </div>
-    
-
-        <div class="box">
-            <div class="box-body">
-                <h5 class="box-title">The Human Condition</h5>
-                <p class="box-text">The Human Condition is a digital platform for mental health, personal growth and wellness, with a wide variety of resources</p>
-                <a href="https://thehumancondition.com/" class="btn btn-primary">Visit The Human Condition</a>
+    <div id="resource-header">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-12 my-auto">
+                    <h1 class="main-heading text-uppercase">
+                        Resources
+                    </h1>
+                    <h3 class="sub-heading">
+                        Check out the following resources to strengthen your mental wellbeing.
+                    </h3>
+                </div>
             </div>
         </div>
-    
-
-        <div class="box">
-            <div class="box-body">
-                <h5 class="box-title">Active Wellness</h5>
-                <p class="box-text">Active Wellness runs a blog exploring fitness and nutrition, which are as important in wellbeing as mental health</p>
-                <a href="https://www.activewellness.com/blog" class="btn btn-primary">Visit Active Wellness</a>
+    </div>
+    <div class="container-fluid" id="bg-app">
+        <div class="container pt-5">
+            <div class="row mt-4">
+                <div class="col-12">
+                    <h4>Apps</h4>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 justify-content-center d-flex">
+                        <div class="card zoom" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <strong>Headspace</strong>
+                                </h5>
+                                <p class="card-text">
+                                    Headspace is meditation made simple. Learn meditation and mindfulness and mindfulness skills from
+                                    world-class experts and develop tools to help you focus, breath, stay calm and create balance in 
+                                    your life.
+                                </p>
+                                <a href="#" class="card-link">Visit Resource</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 justify-content-center d-flex">
+                        <div class="card zoom" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <strong>Calm</strong>
+                                </h5>
+                                <p class="card-text">
+                                    Calm offers guided and unguided meditations that focus on relaxing in 
+                                    general and keeping steady in tough times. And, as an added perk, the 
+                                    app lets you personalize your experience.
+                                </p>
+                                <a href="https://www.calm.com/" class="card-link">Visit Resource</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 justify-content-center d-flex">
+                        <div class="card zoom" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <strong>Smiling Mind</strong>
+                                </h5>
+                                <p class="card-text">
+                                    Your guide to daily mindfulness and meditation. A tool to help bring balance to your life.
+                                    Develope by a team of psychologists and educators. 
+                                </p>
+                                <a href="https://www.healthdirect.gov.au/smiling-mind" class="card-link">Visit Resource</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 justify-content-center d-flex">
+                    <div class="card zoom" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <strong>Peak - Brain Training</strong>
+                            </h5>
+                            <p class="card-text">
+                                Peak is a fun, free brain training workout that uses games and puzzles to challenge
+                                your focus, memory, problem solving and mental agility. It keeps track to of your progress. 
+                            </p>
+                            <a href="https://www.peak.net/" class="card-link">Visit Resource</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 justify-content-center d-flex">
+                    <div class="card zoom" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <strong>Happify</strong>
+                            </h5>
+                            <p class="card-text">
+                                An app that uses science-based activities and games to help you take control of your emotional
+                                wellbeing. Use Happify to help you overcome negative thoughts, stress and life challenges. 
+                            </p>
+                            <a href="https://www.happify.com/" class="card-link">Visit Resource</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 justify-content-center d-flex">
+                    <div class="card zoom" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <strong>InsightTimer</strong>
+                            </h5>
+                            <p class="card-text">
+                                Insight Timer is a meditation app with a large selection of audio tracks to 
+                                choose from, including guided meditations, music, and talks by teachers. Users can 
+                                join the community of users, which includes chat groups focused on specific issues.
+                            </p>
+                            <a href="https://insighttimer.com/" class="card-link">Visit Resource</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="box">
-            <div class="box-body">
-            <h5 class="box-title">Mindful</h5>
-            <p class="box-text">
-                Mindful is a blog with articles concerning love, meditation, sleep, compassion and anxiety
-            </p>
-            <a href="https://www.mindful.org/" class="btn btn-primary">Visit Mindful</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="box-body">
-            <h5 class="box-title">Additude</h5>
-            <p class="box-text">
-                Additude is a blog primarily concerning folks with ADHD and similar conditions, who may particularly struggle with maintaining their mindfulness and wellbeing
-            </p>
-            <a href="https://www.additudemag.com/" class="btn btn-primary">Visit Additude</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="box-body">
-            <h5 class="box-title">The Oxford Mindfulness Centre</h5>
-            <p class="box-text">
-                The Oxford Mindfulness Centre's mission is to reduce suffering, promote resilience and realise human potential. They run online sessions and courses
-            </p>
-            <a href="https://www.oxfordmindfulness.org/" class="btn btn-primary">Visit the Oxford Mindfulness Centre</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="box-body">
-            <h5 class="box-title">The Free Mindfulness Project</h5>
-            <p class="box-text">The Free Mindfulness Project is a growing collection of free-to-download mindfulness amd meditation exercises</p>
-            <a href="https://www.freemindfulness.org/welcome" class="btn btn-primary">Visit The Free Mindfulness Project</a>
-            </div>
-        </div>
-    
-
-        <div class="box">
-            <div class="box-body">
-            <h5 class="box-title">The Wellness Society</h5>
-            <p class="box-text">
-                The Wellness Society offers self-help, therapy, and coaching tools, and is recommended by the NHS, MIND and the Royal College of Nursing
-            </p>
-            <a href="https://thewellnesssociety.org/" class="btn btn-primary">Visit The Wellness Society</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="box-body">
-            <h5 class="box-title">Mindfulness for Teens</h5>
-            <p class="box-text">
-                Mindfulness for Teens is a blog directed specifically at teenagers and young people, who have often not developed the tools to deal with the stress of life
-            </p>
-            <a href="http://mindfulnessforteens.com/" class="btn btn-primary">Visit Mindfulness for Teens</a>
-            </div>
-        </div>
-
     </div>
 
-</div>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-12">
+                <h4>Links</h4>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 justify-content-center d-flex">
+                    <div class="card zoom" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">The NHS</h5>
+                            <p class="card-text">
+                            Britain's National Health Service has increasingly recognized 
+                            the importance of mindfulness and mental well-being in recent years.
+                            </p>
+                            <a href="https://www.nhs.uk/mental-health/self-help/tips-and-support/mindfulness/" class="card-link">Visit Resource</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 justify-content-center d-flex">
+                    <div class="card zoom" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Active Wellness</h5>
+                            <p class="card-text">
+                                Active Wellness runs a blog exploring fitness and nutrition, which are 
+                                as important in wellbeing as mental health.
+                            </p>
+                            <a href="https://www.activewellness.com/blog" class="card-link">Visit Resource</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 justify-content-center d-flex">
+                    <div class="card zoom" style="width: 18rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">The Human Condition</h5>
+                            <p class="card-text">
+                                The Human Condition is a digital platform for mental health, 
+                                personal growth and wellness, with a wide variety of resources.
+                            </p>
+                        <a href="https://thehumancondition.com/" class="card-link">Visit Resource</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 justify-content-center d-flex">
+                    <div class="card zoom" style="width: 18rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Mindful</h5>
+                            <p class="card-text">
+                            Mindful is a blog with articles concerning love, meditation, sleep, compassion 
+                            and anxiety.
+                            </p>
+                        <a href="https://www.mindful.org/" class="card-link">Visit Resource</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 justify-content-center d-flex">
+                    <div class="card zoom" style="width: 18rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">The Oxford Mindfulness Centre</h5>
+                            <p class="card-text">
+                                The Oxford Mindfulness Centre's mission is to reduce suffering, promote 
+                                resilience and realise human potential. They run online sessions and courses
+                            </p>
+                        <a href="https://www.oxfordmindfulness.org/" class="card-link">Visit Resource</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 justify-content-center d-flex">
+                    <div class="card zoom" style="width: 18rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">The Free Mindfulness Project</h5>
+                            <p class="card-text">
+                                The Free Mindfulness Project is a growing collection of free-to-download 
+                                mindfulness amd meditation exercises.
+                            </p>
+                        <a href="https://www.freemindfulness.org/welcome" class="card-link">Visit Resource</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="bg-app">
+        <div class="container pt-5">
+            <div class="row mt-4">
+                <div class="col-12">
+                    <h4>Podcasts</h4>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 justify-content-center d-flex">
+                        <div class="card zoom" style="width: 18rem;">
+                            <div class="card-body">
+                            <h5 class="card-title">Ten percent happier</h5>
+                                <p class="card-text">
+                                    Dan Harris has really top notch, highly intellectual guests on this show. 
+                                    The interview style which mixes spirituality, journalism, and science.
+                                </p>
+                            <a href="https://www.tenpercent.com/podcast" class="card-link">Visit Resource</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 justify-content-center d-flex">
+                        <div class="card zoom" style="width: 18rem;">
+                            <div class="card-body">
+                            <h5 class="card-title">Daily Meditation Podcast</h5>
+                                <p class="card-text">
+                                    A library of meditations at your fingertips. This weekly podcast gives you 
+                                    daily guided meditation techniques to help you manage your emotions, become 
+                                    happier, healthier. 
+                                </p>
+                            <a href="https://player.fm/series/daily-meditation-podcast" class="card-link">Visit Resource</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 justify-content-center d-flex">
+                        <div class="card zoom" style="width: 18rem;">
+                            <div class="card-body">
+                            <h5 class="card-title">Meditation Minis</h5>
+                                <p class="card-text">
+                                    The podcast if for people looking for quick and simple ways to meditate.
+                                    Be guided through 10 minutes of relaxing meditations that help calm anxiety, 
+                                    overcome negative thinking and boost.
+                                </p>
+                            <a href="https://meditationminis.com/" class="card-link">Visit Resource</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 {% endblock %}
