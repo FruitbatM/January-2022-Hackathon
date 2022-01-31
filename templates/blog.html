@@ -84,6 +84,11 @@
             {% endif %}
 
             <div class="container">
+                {% if call_or_get(current_user.is_authenticated) %}
+                <a class="nav-link" href="{{ url_for('add_blog')}}">Add Blog</a>
+                {% endif %}
+            </div>
+            <div class="container">
                 {# Macro for creating navigation links #}
                 {% macro render_navigation(pagination, endpoint) %}
 
