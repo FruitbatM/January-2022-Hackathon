@@ -206,6 +206,12 @@ Once above steps have been followed the website can be deployed. Please find the
 
 # Credits
 
+## Images
+
+- Blog images from [Pexels](https://www.pexels.com/)
+- Resource hero image from [Unsplash](https://unsplash.com/)
+- Illustration from [Undraw by IRA Design](https://undraw.co/illustrations)
+
 ## Resources
 
 The following resources were used in the Resources page of the Mindful Timer website
